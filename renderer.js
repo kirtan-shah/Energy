@@ -5,12 +5,13 @@ const fs = require("fs");
 
 const list = document.getElementById("file-list");
 
-const dir = "/users/kirtan/desktop/"
+const dir = "../"
 
 fs.readdirSync(dir).forEach(file => {
   let item = document.createElement("div");
-  item.setAttribute('class', fs.lstatSync(dir + file).isDirectory() ? "directory" : "file");
-  item.appendChild(document.createTextNode(file));
+  let filePath = dir + file
+  item.setAttribute('class', fs.lstatSync(filePath).isDirectory() ? "directory" : "file");
+  item.innerHTML += "<ul> <a href = " + "filePath> " + file + " </a> </ul>"
   list.appendChild(item);
 })
 
