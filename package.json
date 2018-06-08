@@ -17,5 +17,8 @@
   "homepage": "https://github.com/kirtan-shah/Energy#readme",
   "devDependencies": {
     "electron": "^2.0.0"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security"
   }
 }
