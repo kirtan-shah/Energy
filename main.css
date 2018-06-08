@@ -2,3 +2,13 @@ h1 {
     font-family: monospace;
     color: blue;
 }
+
+.directory {
+    background: yellow;
+    color: black;
+}
+
+.file {
+    background: none;
+    color: green;
+}

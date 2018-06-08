@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="UTF-8">
-      <title>Energy</title>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Energy</title>
 
-      <link rel="stylesheet" type="text/css" href="main.css"/>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
 
-    </head>
-    <body>
-      <h1>Energy</h1>
-      is a multi-platform file explorer built on
-      node <script>document.write(process.versions.node)</script>,
-      Chrome <script>document.write(process.versions.chrome)</script>,
-      and Electron <script>document.write(process.versions.electron)</script>.
+</head>
+<body>
 
-      <script>
+    <div id="file-list">
+
+    </div>
+
+    <script>
         require('./renderer.js')
-      </script>
+    </script>
 
-    </body>
-  </html>
+</body>
+</html>
